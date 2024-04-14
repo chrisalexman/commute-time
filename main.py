@@ -2,14 +2,19 @@
 
 '''
 
+import credentials
+import locations
+
 import googlemaps
+import os
 import json
 from datetime import datetime
 
-gmaps = googlemaps.Client(key='')
 
-home = ''
-work = ''
+gmaps = googlemaps.Client(key=credentials.api_key)
+
+home = locations.origin
+work = locations.destination
 
 now = datetime.now()
 commute_time = gmaps.distance_matrix(home,
