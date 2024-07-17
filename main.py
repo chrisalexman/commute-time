@@ -1,5 +1,7 @@
 '''
-
+A basic script to estimate the commute time between my home and work using the 
+Google Maps Python API (https://github.com/googlemaps/google-maps-services-python), 
+stores the output in a json file.
 '''
 
 import credentials
